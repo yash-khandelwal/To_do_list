@@ -1,12 +1,12 @@
-$default-font-color: #000;
-$background-color: #4a90e2;
-$container-bgcolor: #f2f2f2;
-$container-bordercolor: #000;
-$textbox-bordercolor: lightgray;
+$default-font-color: #32e0c4;
+$background-color: #eeeeee;
+$container-bgcolor: #212121;
+$container-bordercolor: #32e0c4;
+$textbox-bordercolor: #32e0c400;
 $button-textcolor: #fff;
 $button-hovercolor: #000;
-$add-button-color: #4caf50;
-$clear-button-color: #9f6060;
+$add-button-color: #2196F3;
+$clear-button-color: #fa163f;
 
 
 @mixin mq($size) {

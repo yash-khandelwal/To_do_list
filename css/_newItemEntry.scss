@@ -31,6 +31,7 @@
             font-size: 1.25rem;
             background-color: $add-button-color;
             padding: 00.75rem;
+            font-weight: bold;
             @include mq(768px) {
                 font-size: 1.5rem;
             }

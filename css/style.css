@@ -8,7 +8,7 @@
 html, body {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
-  color: #000;
+  color: #32e0c4;
   width: 100%;
   min-height: 100%;
 }
@@ -21,15 +21,15 @@ html, body {
 
 body {
   padding-top: 20px;
-  background-color: #4a90e2;
+  background-color: #eeeeee;
 }
 
 section {
-  background-color: #f2f2f2;
+  background-color: #212121;
   width: 90%;
   max-width: 700px;
   margin: auto;
-  border: 1px solid #000;
+  border: 1px solid #32e0c4;
   border-radius: 10px;
 }
 
@@ -38,7 +38,7 @@ section {
   min-width: 48px;
   min-height: 48px;
   color: #fff;
-  border: 2px solid lightgray;
+  border: 2px solid #32e0c400;
   border-radius: 10px;
   outline: none;
 }
@@ -80,7 +80,7 @@ section {
 .newItemEntry form input[type="text"] {
   width: 80%;
   font-size: 1.25rem;
-  border: 2px solid lightgray;
+  border: 2px solid #32e0c400;
   border-radius: 10px;
   padding: 0.75rem;
   outline: none;
@@ -94,8 +94,9 @@ section {
 
 .newItemEntry form button {
   font-size: 1.25rem;
-  background-color: #4caf50;
+  background-color: #2196F3;
   padding: 00.75rem;
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) {
@@ -123,7 +124,7 @@ section {
 
 .listContainer .listTitle button {
   font-size: 1rem;
-  background-color: #9f6060;
+  background-color: #fa163f;
   padding: 0 0.1rem;
   margin-bottom: 0.5rem;
 }
