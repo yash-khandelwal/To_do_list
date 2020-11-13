@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: 0;
-          box-sizing: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html, body {
@@ -20,7 +20,7 @@ html, body {
 }
 
 body {
-  padding: 20px;
+  padding-top: 20px;
   background-color: #4a90e2;
 }
 
@@ -102,5 +102,70 @@ section {
   .newItemEntry form button {
     font-size: 1.5rem;
   }
+}
+
+.listContainer {
+  min-height: 60vh;
+  padding: 0.75rem;
+}
+
+.listContainer .listTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.listContainer .listTitle button {
+  font-size: 1rem;
+  background-color: #9f6060;
+  padding: 0 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .listContainer .listTitle button {
+    padding: 0 0.5rem;
+  }
+}
+
+.listContainer .listTitle hr {
+  width: 100%;
+}
+
+.listContainer .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1rem;
+}
+
+.listContainer .item input[type="checkbox"] {
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+.listContainer .item input[type="checkbox"]:focus + label {
+  text-decoration: underline;
+}
+
+.listContainer .item label {
+  font-size: 1.1rem;
 }
 /*# sourceMappingURL=style.css.map */
