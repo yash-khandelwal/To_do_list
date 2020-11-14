@@ -13,6 +13,7 @@
             background-color: $clear-button-color;
             padding: 0 0.1rem;
             margin-bottom: 0.5rem;
+            font-weight: bold;
             @include mq(768px) {
                 padding: 0 0.5rem;
             }

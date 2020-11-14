@@ -128,6 +128,7 @@ section {
   background-color: #fa163f;
   padding: 0 0.1rem;
   margin-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) {
