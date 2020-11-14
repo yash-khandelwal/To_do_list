@@ -87,8 +87,23 @@ const buildListItem = (item) => {
     const label = document.createElement("label");
     label.htmlFor = item.getId();
     label.textContent = item.getItem();
+    const up = document.createElement("button");
+    up.innerHTML = "&uarr;";
+    up.className = "btn";
+    up.id = item.getId();
+    addClickListenerToUpBtn(up);
+    const down = document.createElement("button");
+    down.innerHTML = "&darr;";
+    down.className = "btn";
+    down.id = item.getId();
+    addClickListenerToDownBtn(down);
     div.appendChild(check);
     div.appendChild(label);
+    const child_div = document.createElement("div");
+    child_div.className = "prioritise";
+    child_div.appendChild(up);
+    child_div.appendChild(down);
+    div.appendChild(child_div);
     const container = document.getElementById("listItems");
     container.appendChild(div);
 };
@@ -100,6 +115,26 @@ const addClickListenerToCheckbox = (checkbox) => {
         setTimeout(() => {
             refreshThePage();
         }, 2000);
+    });
+};
+
+const addClickListenerToUpBtn = (button) => {
+    button.addEventListener("click", (event) => {
+        toDoList.upItem(button.id);
+        updatePresistentData(toDoList.getList());
+        setTimeout(() => {
+            refreshThePage();
+        }, 100);
+    });
+}; 
+
+const addClickListenerToDownBtn = (button) => {
+    button.addEventListener("click", (event) => {
+        toDoList.downItem(button.id);
+        updatePresistentData(toDoList.getList());
+        setTimeout(() => {
+            refreshThePage();
+        }, 100);
     });
 };
 

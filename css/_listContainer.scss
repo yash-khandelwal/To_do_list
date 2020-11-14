@@ -6,6 +6,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        width: 100%;
 
         button{
             font-size: 1rem;
@@ -24,9 +25,10 @@
 
     .item{
         display: flex;
-        justify-content: flex-start;
+        justify-content: unset;
         align-items: center;
         padding-top: 1rem;
+        width: 100%;
 
         input[type="checkbox"]{
             text-align: center;
@@ -35,15 +37,32 @@
             min-width: 48px;
             min-height: 48px;
             cursor: pointer;
-            margin-right: 1.5rem;
-            
+            margin-right: 1rem;
         }
-
+        .prioritise{
+            margin-left: auto;
+            order: 2;
+            .btn{
+                cursor: pointer;
+                border-radius: 2.5rem;
+                font-size: 1.5rem;
+                font-weight: bold;
+                width: 2.5rem;
+                height: 2.5rem;
+                min-width: 48px;
+                min-height: 48px;
+                align-content: flex-end;
+                background-color: $default-font-color;
+                border-width: 0rem;
+                margin-left: 1rem;
+            }
+        }
         input[type="checkbox"]:focus + label{
             text-decoration: underline;
         }
         label{
             font-size: 1.1rem;
         }
+        
     }
 }

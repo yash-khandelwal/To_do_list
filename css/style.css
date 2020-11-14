@@ -120,6 +120,7 @@ section {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  width: 100%;
 }
 
 .listContainer .listTitle button {
@@ -143,13 +144,14 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-top: 1rem;
+  width: 100%;
 }
 
 .listContainer .item input[type="checkbox"] {
@@ -159,7 +161,30 @@ section {
   min-width: 48px;
   min-height: 48px;
   cursor: pointer;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
+}
+
+.listContainer .item .prioritise {
+  margin-left: auto;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.listContainer .item .prioritise .btn {
+  cursor: pointer;
+  border-radius: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 48px;
+  min-height: 48px;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  background-color: #32e0c4;
+  border-width: 0rem;
+  margin-left: 1rem;
 }
 
 .listContainer .item input[type="checkbox"]:focus + label {
