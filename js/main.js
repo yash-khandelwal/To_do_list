@@ -171,6 +171,9 @@ const calcNextItemId = () => {
     const list = toDoList.getList();
     if(list.length > 0){
         nextItemId = list[list.length - 1].getId() + 1;
+        for(let i = 0; i < list.length; i++){
+            nextItemId = Math.max(nextItemId, list[i].getId() + 1);
+        }
     }
     return nextItemId;
 };
